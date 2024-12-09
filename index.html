@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jennifer Jade</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jennifer Jade</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Jennifer Jade Calma profile picture"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello 👋🏼, I'm</p>
+        <h1 class="title">Jennifer Jade Calma</h1>
+        <p class="section_text_p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/jenni-resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/jennifer-jade/'"
+          />
+          <img src="./assets/github.png" alt="My Github Profile" class="icon"
+          onclick="location.href"='https://github.com/'" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-me.svg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                1+ years<br />
+                Full-Stack Developement
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.S. Bachelors Degree<br />May 2025</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm Jennifer Jade Calma, a Software Developer passionate about
+              creating impactful solutions through technology. At Acolytes Home
+              Health Care, I’ve transformed patient care systems using .NET, C#,
+              and SQL. As a first-generation college student, I’ve founded the
+              Coded Future Collective at Marymount University to empower tech
+              enthusiasts to collaborate and innovate. I also work as an AI
+              Student Researcher, developing solutions that improve health
+              equity and quality of life, and I interned at my university's IT
+              department, where I honed my skills in technical support, system
+              optimization, and process automation. With expertise in full-stack
+              development and a dedication to solving challenges, I’m excited to
+              bring my skills to a forward-thinking team as a Full Stack
+              Developer after graduating in May 2025.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <h1 class="title">Full-Stack Developer Skills</h1>
+      <div class="experience-grid">
+        <!-- Front-End Skills -->
+        <div class="skills-category">
+          <h2>Front-End Development</h2>
+          <ul>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>HTML, CSS, JavaScript</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Responsive Design (Flexbox, Grid)</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>React.js, Bootstrap, Tailwind CSS</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Sass</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>UI/UX Design Principles</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Version Control (Git/GitHub)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Back-End Skills -->
+        <div class="skills-category">
+          <h2>Back-End Development</h2>
+          <ul>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Node.js, Express.js</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>SQL (MySQL, PostgreSQL, SQLite)</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>NoSQL (MongoDB)</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>RESTful APIs, GraphQL</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Server Management (Nginx, Docker)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- DevOps & Deployment -->
+        <div class="skills-category">
+          <h2>DevOps & Deployment</h2>
+          <ul>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Docker, Kubernetes</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>CI/CD (GitHub Actions, Jenkins)</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Cloud Platforms (Heroku, Vercel, Netlify)</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Monitoring (New Relic, Grafana)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Machine Learning & AI -->
+        <div class="skills-category">
+          <h2>Machine Learning & AI</h2>
+          <ul>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>TensorFlow, OpenCV, Keras</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Real-Time Object Detection</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-category">
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Problem-Solving & Debugging</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Project Management (Agile, JIRA)</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Effective Communication</span>
+            </li>
+            <li>
+              <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+              <span>Team Collaboration</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href ='./#projects'"
+      />
+    </section>
+    
+      </div>
+    </section>
+    <section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-container">
+    <div class="contact-info-item">
+      <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
+      <p><a href="mailto:jennifer.jade.calma@outlook.com">jennifer.jade.calma@outlook.com</a></p>
+    </div>
+    <div class="contact-info-item">
+      <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+      <p><a href="https://www.linkedin.com/in/jennifer-jade/">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Copyright &#169; 2024 Jennifer Jade. All Rights Reserved.</p>
+</footer>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
